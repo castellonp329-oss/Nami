@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para Noni</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Karla:wght@400;500;700&display=swap">
+<style>
+/* Layout: una sola columna estrecha, como un pergamino enrollado; cada video es una entrada de bitácora de navegación */
+:root {
+  color-scheme: light;
+  --bg: #efe6d2;
+  --paper: #f6eedc;
+  --fg: #2a2318;
+  --muted: #6e6350;
+  --line: #cdbf9f;
+  --accent: #1d4e6b;
+  --tangerine: #d9701c;
+  --font-display: "IM Fell English SC", "Iowan Old Style", Georgia, serif;
+  --font-serif: "IM Fell English", Georgia, serif;
+  --font-ui: "Karla", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1d27; --paper: #152734; --fg: #ece3cf; --muted: #9fb0b8;
+    --line: #2a4152; --accent: #7fb7d4; --tangerine: #f0903a; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-serif); font-size: 18px; line-height: 1.55;
+  padding-block: 40px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
